@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7B72F0B2913C3A300DE0C29 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B72F0A2913C3A300DE0C29 /* DetailEditView.swift */; };
 		E7BEDC2229114F2100B97CF2 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BEDC2129114F2100B97CF2 /* ScrumdingerApp.swift */; };
 		E7BEDC2429114F2100B97CF2 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BEDC2329114F2100B97CF2 /* MeetingView.swift */; };
 		E7BEDC2629114F2200B97CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BEDC2529114F2200B97CF2 /* Assets.xcassets */; };
@@ -17,9 +18,11 @@
 		E7BEDC382911714C00B97CF2 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BEDC372911714C00B97CF2 /* TrailingIconLabelStyle.swift */; };
 		E7BEDC3A2911A65800B97CF2 /* Scrums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BEDC392911A65800B97CF2 /* Scrums.swift */; };
 		E7BEDC3C2911B08E00B97CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BEDC3B2911B08E00B97CF2 /* Assets.xcassets */; };
+		E7BEDC3E2912722B00B97CF2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BEDC3D2912722A00B97CF2 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7B72F0A2913C3A300DE0C29 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		E7BEDC1E29114F2100B97CF2 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BEDC2129114F2100B97CF2 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		E7BEDC2329114F2100B97CF2 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		E7BEDC372911714C00B97CF2 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		E7BEDC392911A65800B97CF2 /* Scrums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrums.swift; sourceTree = "<group>"; };
 		E7BEDC3B2911B08E00B97CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/PersistingData/StartingProject/Scrumdinger/Assets.xcassets; sourceTree = "<group>"; };
+		E7BEDC3D2912722A00B97CF2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 				E7BEDC35291167D900B97CF2 /* CardView.swift */,
 				E7BEDC372911714C00B97CF2 /* TrailingIconLabelStyle.swift */,
 				E7BEDC392911A65800B97CF2 /* Scrums.swift */,
+				E7BEDC3D2912722A00B97CF2 /* DetailView.swift */,
+				E7B72F0A2913C3A300DE0C29 /* DetailEditView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,7 +129,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					E7BEDC1D29114F2100B97CF2 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -167,6 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7BEDC342911665B00B97CF2 /* DailyScrum.swift in Sources */,
+				E7BEDC3E2912722B00B97CF2 /* DetailView.swift in Sources */,
+				E7B72F0B2913C3A300DE0C29 /* DetailEditView.swift in Sources */,
 				E7BEDC382911714C00B97CF2 /* TrailingIconLabelStyle.swift in Sources */,
 				E7BEDC3A2911A65800B97CF2 /* Scrums.swift in Sources */,
 				E7BEDC322911620600B97CF2 /* Theme.swift in Sources */,
@@ -212,6 +220,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -270,6 +279,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -294,8 +304,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Scrumdinger/Scrumdinger.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -330,8 +342,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Scrumdinger/Scrumdinger.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

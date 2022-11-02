@@ -36,4 +36,8 @@ case yellow
     var mainColor: Color{
         Color(rawValue)
     }
+    
+    var name: String{
+        rawValue.capitalized
+    }
 }
